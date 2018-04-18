@@ -3,4 +3,6 @@ from . import views # 우리가 만들 view들
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+
 ]
